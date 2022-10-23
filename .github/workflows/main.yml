@@ -17,4 +17,4 @@ jobs:
       - uses: microsoft/playwright-github-action@v1
 
       - name: Install dependencies and run tests
-        run: npx playwright && npm test
+        run: npx playwright install && npx playwright test
