@@ -26,6 +26,6 @@ test.describe("TC002", () => {
       "Go to checkout"
     );
     await restaurantPage.decreaseBasketQuantity();
-    expect(await restaurantPage.getEmptyBasketLabel()).toContain("Your basket is empty");
+    expect(await restaurantPage.getEmptyBasketLabel()).toContain("!!!Your basket is empty!!!!");
   });
 });
