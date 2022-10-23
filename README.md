@@ -39,7 +39,7 @@ npx playwright test --headed
 npx playwright show-report
 ```
 
-## Docker
+## Github Actions
   The project integrated with github actions and you can see the runs build and rerun it from here 
 ```JS
 https://github.com/husseinhawary/QA-Deliveroo-Demo/actions
