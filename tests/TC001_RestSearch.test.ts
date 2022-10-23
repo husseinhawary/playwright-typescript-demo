@@ -6,7 +6,15 @@ test.describe("TC001", () => {
     await page.goto(testConfig.URL);
   });
 
-  test("Search On Rest Resatruant", async ({homePage, allRestauratsPage, restaurantPage}) => {
+  test("Opening Restaurant Page", async ({homePage, allRestauratsPage, restaurantPage}) => {
+    /**
+     * #TC004
+     * Scenario: Go to restaurant page
+     * Given the user in restaurants list page
+     * And the user enters a restaurant name already exists (I.E “Wagamama”)
+     * When the user clicks on the restaurant name from result list
+     * Then restaurant page should be opened
+     */
     await homePage.locationSearch(testConfig.location);
     expect(await allRestauratsPage.getDeliveringToMsg()).toContain("Delivering to");
     await allRestauratsPage.getFirstResturant(testConfig.restaurantName);

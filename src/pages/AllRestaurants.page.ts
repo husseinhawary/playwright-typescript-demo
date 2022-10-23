@@ -6,13 +6,11 @@ let webActions: WebActions;
 export default class AllRestaurants {
   readonly page: Page;
 
-  readonly deliveringToMessage =
-    "//div[@class='HomeSummary-1b36ea64056bc6b2']//h3";
-  readonly acceptOfferBtn =
-    "//button[@class='ccl-388f3fb1d79d6a36 ccl-6d2d597727bd7bab ccl-59eced23a4d9e077 ccl-7be8185d0a980278']";
+  // Locators && some locators need to revisit
+  readonly deliveringToMessage = "//div[@class='HomeSummary-1b36ea64056bc6b2']//h3";
+  readonly acceptOfferBtn = "//button[@class='ccl-388f3fb1d79d6a36 ccl-6d2d597727bd7bab ccl-59eced23a4d9e077 ccl-7be8185d0a980278']";
   readonly restSearchTxtBox = 'input[name="search"] >> nth=0';
-  readonly restSearchList =
-    'a[class="HomeSuggestionRow-a076e6c92509b9fa"] >> nth=0';
+  readonly restSearchList = 'a[class="HomeSuggestionRow-a076e6c92509b9fa"] >> nth=0';
 
   constructor(page: Page) {
     this.page = page;

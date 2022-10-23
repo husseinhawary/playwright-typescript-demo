@@ -6,6 +6,8 @@ let webActions: WebActions;
 export default class HomePage {
 
   readonly page: Page;
+
+  // Locators
   readonly acceptBrowserCookiesBtn = ("id=onetrust-accept-btn-handler");
   readonly locationTxtBox = "id=location-search";
   readonly searchLocationBtn = "//li[@class='ccl-ee4ea4aaab604785']//button";
