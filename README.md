@@ -8,7 +8,6 @@ The following software are required:
 
 - nodejs.
 - vs code.
-- docker.
 
 ### Installation
 
@@ -51,17 +50,4 @@ npx playwright show-report
   The project integrated with github actions and you can see the runs build and rerun it from here 
 ```JS
 https://github.com/husseinhawary/QA-Deliveroo-Demo/actions
-```
-
-## Docker
-  I added the Dockerfile but I didn't complete testing it locally because it takes a lot of time so I am not turst if it works or there is any issues in integration
-  - These steps which I proceed in it to run the test dockerized but didn't complete it.
-```JS
-docker build -t playwright-docker .
-```
-```JS
-docker image ls
-```
-```JS
-docker run -it playwright-docker:latest npm run test
 ```
