@@ -20,7 +20,7 @@ export class WebActions {
     await this.page.fill(locator, text);
   }
   async getElementText(locator: string): Promise<string> {
-    return await this.page.locator(locator).innerText();;
+    return await this.page.locator(locator).innerText();
 }
   async verifyElementContainsText(
     locator: string,
@@ -50,4 +50,5 @@ export class WebActions {
   ): Promise<void> {
     expect(expectedValue.trim(), `${errorMessage}`).toBe(actualValue);
   }
+
 }

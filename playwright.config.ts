@@ -41,6 +41,8 @@ const config: PlaywrightTestConfig = {
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure',
+    video: 'on-first-retry',
   },
 
   /* Configure projects for major browsers */
@@ -49,7 +51,7 @@ const config: PlaywrightTestConfig = {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        viewport: { width: 1848, height: 1053 },
+        viewport: { width: 1366, height: 768 },
         // launchOptions: {
         //   args: ["--start-maximized"]
         // }

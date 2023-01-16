@@ -24,6 +24,14 @@ https://github.com/husseinhawary/QA-Deliveroo-Demo.git
 npm install
 ```
 
+```sh
+npm i -D @playwright/test
+```
+
+```sh
+npx playwright install
+```
+
 ## Running local and show the report
 
 1. Run local

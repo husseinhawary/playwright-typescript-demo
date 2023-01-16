@@ -1,7 +1,4 @@
 export const testConfig = {
-    URL: `https://deliveroo.co.uk/`,
-    location: `UK-LON-R7, Handyside Street, London, UK`,
-    restaurantName: `Wagamama`,
+    URL: `https://store.tamatem.co/home`,
     waitForElement: 10000
-    
 }

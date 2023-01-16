@@ -1,25 +1,25 @@
-import AllRestaurants from "../pages/AllRestaurants.page";
-import HomePage from "../pages/Home.page";
-import Restaurant from "../pages/Restaurant.page";
-
 import { test as baseTest } from "@playwright/test";
 
-const test  = baseTest.extend<{
-     homePage: HomePage;
-   allRestauratsPage: AllRestaurants;
-   restaurantPage: Restaurant;
+import HomePage from "../pages/Home.page";
+import AllGames from "../pages/AllGames.page";
+import GameDetails from "../pages/GameDetails.page";
+
+const test = baseTest.extend<{
+  homePage: HomePage;
+  allGames: AllGames;
+  gameDetails: GameDetails;
 }>({
-    homePage: async ({ page }, use) => {
-        await use(new HomePage (page))
-    },
+  homePage: async ({ page }, use) => {
+    await use(new HomePage(page));
+  },
 
-    allRestauratsPage: async ({ page }, use) => {
-        await use(new AllRestaurants (page))
-    },
+  allGames: async ({ page }, use) => {
+    await use(new AllGames(page));
+  },
 
-    restaurantPage: async ({ page }, use) => {
-        await use(new Restaurant (page))
-    },
+  gameDetails: async ({ page }, use) => {
+    await use(new GameDetails(page));
+  },
 });
 
 export default test;
