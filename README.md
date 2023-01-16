@@ -65,4 +65,3 @@ docker image ls
 ```JS
 docker run -it playwright-docker:latest npm run test
 ```
-test
