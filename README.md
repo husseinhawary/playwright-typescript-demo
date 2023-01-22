@@ -49,5 +49,5 @@ npx playwright show-report
 ## Github Actions
   The project integrated with github actions and you can see the runs build and rerun it from here 
 ```JS
-https://github.com/husseinhawary/QA-Deliveroo-Demo/actions
+https://github.com/husseinhawary/QA-Web-Demo/actions
 ```
