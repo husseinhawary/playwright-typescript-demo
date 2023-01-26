@@ -45,6 +45,8 @@ npx playwright test --headed
 ```JS
 npx playwright show-report
 ```
+## Local Run Report Screenshot
+![Playwright-Test-Report.png](Playwright-Test-Report.png)
 
 ## Github Actions
   The project integrated with github actions and you can see the runs build and rerun it from here 
