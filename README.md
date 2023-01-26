@@ -14,7 +14,7 @@ The following software are required:
 1. Clone the repo using below URL
 
 ```sh
-https://github.com/husseinhawary/QA-Deliveroo-Demo.git
+https://github.com/husseinhawary/playwright-typescript-demo
 ```
 
 2. Navigate to folder and install npm packages using:
@@ -49,5 +49,5 @@ npx playwright show-report
 ## Github Actions
   The project integrated with github actions and you can see the runs build and rerun it from here 
 ```JS
-https://github.com/husseinhawary/QA-Web-Demo/actions
+https://github.com/husseinhawary/playwright-typescript-demo/actions
 ```
