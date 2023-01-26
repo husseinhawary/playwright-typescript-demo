@@ -1,4 +1,4 @@
 export const testConfig = {
-    URL: `https://store.tamatem.co/home`,
+    URL: `http://www.uitestingplayground.com`,
     waitForElement: 10000
 }
